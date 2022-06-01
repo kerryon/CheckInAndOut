@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: 'ITC-book';
-  src: url('../fonts/ITC-ITCAvantGardePro-Bk.otf') format('opentype');
+  src: url('../fonts/ITC-ITCAvantGardePro-Bk.otf') format('opentype'); /*Add '../fonts' for upload*/
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ITC-bold';
-  src: url('../fonts/ITC-ITCAvantGardePro-Bold.otf') format('opentype');
+  src: url('../fonts/ITC-ITCAvantGardePro-Bold.otf') format('opentype');  /*Add '../fonts' for upload */
   font-weight: normal;
   font-style: normal;
 }
@@ -152,6 +152,7 @@ body {
   width: 100%;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 20px;
   overflow:auto;
   float:left;
 }
@@ -204,6 +205,13 @@ body {
 
 .btn:hover {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.filter__wrapper {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {

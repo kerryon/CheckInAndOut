@@ -10,8 +10,14 @@ var red;
 var green;
 var blue;
 var quotes2 = []; //<==empty array
+var quotes3 = [];
 var checkInChecked = document.getElementById("in");
 var checkOutChecked = document.getElementById("out");
+var filter_1 = document.getElementById("1");
+var filter_2 = document.getElementById("2");
+var filter_3 = document.getElementById("3");
+
+let results = [];
 
 //a function to print the message in an attachable HTML element.
 function print(message) {
@@ -53,12 +59,12 @@ function getRandomQuote() {
 		checkIn = quotes2;
 	}
 }
-if (checkOutChecked.checked == true) {
+if (checkInChecked.checked == false) {
   var quoteObject = Math.floor(Math.random() * checkOut.length);
   var splicedQuote = checkOut.splice(quoteObject, 1)[0];
-  quotes2.push(splicedQuote);
+  quotes3.push(splicedQuote);
 	if (checkOut.length === 0) {
-		checkOut = quotes2;
+		checkOut = quotes3;
 	}
 }
   return splicedQuote;
@@ -84,7 +90,17 @@ function printQuote() {
 //Set an interval of each 10 seconds to execute our printQuote function
 // setInterval(printQuote, 10000);
 
+//Emoji change after first click
 function changeEmoji() {
   const root = document.querySelector(":root");
   root.style.setProperty("--pseudo-emoji", `'👉🏽'`);
+}
+
+//Filter array by tags
+function filterTags(word) {
+  let search = word;
+  results = checkIn.filter(({tags}) => {
+  return tags.some(e => e.toLowerCase().includes(search.toLowerCase()))
+  })
+  console.log(results);
 }
