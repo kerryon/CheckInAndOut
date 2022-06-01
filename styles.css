@@ -1,0 +1,246 @@
+:root {
+  --pseudo-emoji: '🙄';
+}
+
+@font-face {
+  font-family: 'ITC-book';
+  src: url('./fonts/ITC-ITCAvantGardePro-Bk.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ITC-bold';
+  src: url('./fonts/ITC-ITCAvantGardePro-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /* text-align: center; */
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-family: 'ITC-bold';
+  background: linear-gradient(45deg,#FCE847, #4EFFA7, #F796E1 , #27DBB1,#FF8810, #18DD7B);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+#quote-box {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  line-height: .5;
+}
+.quote {
+  font-size: 4.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+  margin: 0;
+  hyphens: auto;
+  } 
+.quote:before, .quote:after {
+  font-size: 4rem;
+  line-height: 2.5rem;
+  position: absolute;
+}
+.quote:before {
+  content: var(--pseudo-emoji);
+  top: 0.2em;
+  left: -1.2em;
+}
+/* .quote:after {
+  content: "”";
+  bottom: -.1em;
+  margin-left: .1em;
+  position: absolute;
+} */
+.source {
+  font-size: 1.25rem;;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 4em;
+}
+/* .source:before {
+  content: "—";
+} */
+.citation {
+  font-style: italic;
+}
+/* .citation:before {
+  content: ", ";
+  font-style: normal;
+}
+.year:before {
+  content: ", ";
+  font-style: normal;
+} */
+
+#loadQuote {
+  /* font-family:'ITC-book';
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  position: fixed;
+  width: 10em;
+  height: 10em;
+  display: inline-block;
+  left: 50%;
+  margin-left: -5em;
+  bottom: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  color: white;
+  background-color: black;
+  box-shadow: initial;
+  padding: 15px 0;
+  transition: .5s ; */
+
+  color: white;
+  font-size: 1.2rem;
+  width: 150px;
+	height: 150px;
+	margin-left: -75px;
+	margin-top: -75px;
+	left: 50%;
+	bottom: 15%;
+	position: absolute;
+	background: #e55050;
+	border-radius: 100px;
+	box-shadow: inset -2px 2px 2px 0px #ef9393, inset 2px -2px 2px 0px rgba(113,17,17,0.3), inset 0px 0px 40px 15px #de2424, 1px 1px 0 0 #d32020, 2px 2px 0 0 #c61e1e, 3px 3px 0 0 #b81c1c, 4px 4px 0 0 #ab1a1a, 5px 5px 0 0 #9e1818, 6px 6px 0 0 #901616, 7px 7px 0 0 #881414, 8px 8px 0 0 #831414, 9px 9px 0 0 #7f1313, 10px 10px 0 0 #7a1212, 11px 11px 0 0 #761212, 12px 12px 0 0 #711111, 13px 13px 0 0 #711111, 14px 14px 0 0 #711111, 15px 15px 0 0 #711111, 16px 16px 0 0 #711111, 17px 17px 0 0 #711111, 18px 18px 0 0 #711111, 19px 19px 0 0 #711111, 20px 20px 0 0 #711111, 19px 21px 1pc 1px rgba(113,17,17,0.1), 18px 22px 1px 1px rgba(113,17,17,0.1), 17px 23px 1px 1px rgba(113,17,17,0.1), 16px 24px 1px 1px rgba(113,17,17,0.1), 15px 25px 1px 1px rgba(113,17,17,0.1), 14px 26px 2px 1px rgba(113,17,17,0.1), 13px 27px 3px 1px rgba(113,17,17,0.1), 12px 28px 4px 1px rgba(113,17,17,0.1), 11px 29px 5px 1px rgba(113,17,17,0.1), 10px 30px 6px 1px rgba(113,17,17,0.1), 9px 31px 7px 1px rgba(113,17,17,0.1), 20px 20px 4px 1px #711111;
+	transition: all 0.4s ease-out;
+	cursor: pointer;
+  border: none;
+}
+ #loadQuote:active {
+	 transition: all 0.15s ease-out;
+	 margin-left: -50px;
+	 margin-top: -50px;
+	 background: #e86666;
+	 box-shadow: inset -2px 2px 2px 0px #ef9393, inset 2px -2px 2px 0px rgba(113,17,17,0.3), inset 0px 0px 40px 15px #de2424, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 2px 1px rgba(113,17,17,0.5), 0px 0px 4px 1px #711111;
+}
+
+/* #loadQuote:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+  transform: translateY(-0.25em);
+}
+#loadQuote:focus {
+  outline: none;
+} */
+
+.btn__wrapper {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  overflow:auto;
+  float:left;
+}
+
+.btn__wrapper label { 
+  float:left;
+  width: 10em;
+  height: 3em;
+}
+
+.btn__wrapper label:last-child { 
+  margin-left: 20px;
+}
+
+.btn__wrapper label span { 
+  text-align:center;
+  padding:12px 0px;
+  display:block;
+  border-radius: 25px;
+}
+
+.btn__wrapper label input {
+  position:absolute;
+  display: none;
+  top:-20px;
+}
+
+.btn__wrapper input:checked + span {
+  background-color:black;
+  color:#fff;
+}
+
+.btn {
+  font-family:'ITC-book';
+  width: 10em;
+  height: 3em;
+  display: inline-block;
+  border-radius: 50px;
+  border: 3px solid #fff;
+  color: white;
+  background-color: black;
+  padding: 15px 0;
+  transition: .5s ;
+}
+
+.btn input {
+  position: absolute;
+  display: none;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1200px) {
+  .quote {
+    font-size: 5rem;
+  }
+  .quote:before, .quote:after {
+    font-size: 4rem;
+  }
+  .source {
+    font-size: 2rem;
+  }
+  #loadQuote {
+    font-size: 2rem;
+    width: 250px;
+    height: 250px;
+    margin-left: -125px;
+	 margin-top: -125px;
+   border-radius: 50%;
+  }
+  #loadQuote:active {
+    margin-left: -100px;
+    margin-top: -100px;
+ }
+  h4 {
+    font-size: 2rem;
+  }
+  .btn__wrapper label span {
+    font-size: 2rem;
+  }
+
+  .btn__wrapper label { 
+    margin-top: 100px;
+    float:left;
+    width: 15em;
+    height: 4em;
+  }
+}
+
+
