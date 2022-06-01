@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: 'ITC-book';
-  src: url('./fonts/ITC-ITCAvantGardePro-Bk.otf') format('opentype');
+  src: url('../fonts/ITC-ITCAvantGardePro-Bk.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ITC-bold';
-  src: url('./fonts/ITC-ITCAvantGardePro-Bold.otf') format('opentype');
+  src: url('../fonts/ITC-ITCAvantGardePro-Bold.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
