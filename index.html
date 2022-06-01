@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kstr – Check-In & Out Generator</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="rgb">
+  <div class="container">
+    <div id="quote-box">
+      <p class="quote">Check-In oder Check-Out?</p>
+      <p class="source"><span class="citation"></span><span class="year"></span></p>
+    </div>
+
+    <div class="btn__wrapper">
+      <label>
+        <input type="checkbox" id="in" class="btn" onclick="uncheckChecked(this)" checked><span>Check-In</span></input>
+      </label>
+      <label>
+        <input type="checkbox" id="out" class=" btn" onclick="uncheckChecked(this)"><span>Check-Out</span></input>
+      </label>
+    </div>
+
+    <button id="loadQuote">Neue Frage</button>
+
+  </div>
+  <script src="js/quotes.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
