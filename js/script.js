@@ -39,8 +39,8 @@ function randomColor() {
 }
 
 //uncheck checked checkbox
-function uncheckChecked(obj) {
-  var cbs = document.getElementsByClassName("btn");
+function uncheckChecked(obj, className) {
+  var cbs = document.getElementsByClassName(className);
   for (var i = 0; i < cbs.length; i++) {
       cbs[i].checked = false;
   }
@@ -50,7 +50,6 @@ function uncheckChecked(obj) {
 
 //Function named getRandomQuote which selects a random object from quotes array and returns the randomly selected object, then we splice it, to don't repeat a random quote more than once until all quotes from the array have been displayed.
 function getRandomQuote() {
-
   if (checkInChecked.checked == true) {
   var quoteObject = Math.floor(Math.random() * checkIn.length);
   var splicedQuote = checkIn.splice(quoteObject, 1)[0];
@@ -66,8 +65,37 @@ if (checkInChecked.checked == false) {
 	if (checkOut.length === 0) {
 		checkOut = quotes3;
 	}
-}
+
+  if (filter_1.checked || filter_2.checked || filter_3.checked) {
+    filter_1.checked = false;
+    filter_2.checked = false;
+    filter_3.checked = false;
+  }
+
   return splicedQuote;
+}
+
+  if (filter_1.checked == true) {
+    if (!splicedQuote.tags.includes('Freunde')) {
+      return getRandomQuote();
+    } 
+      return splicedQuote;
+    }
+  if (filter_2.checked == true) {
+    if (!splicedQuote.tags.includes('Bekannte')) {
+      return getRandomQuote();
+    } 
+      return splicedQuote;
+    }
+  if (filter_3.checked == true) {
+    if (!splicedQuote.tags.includes('Kompliziert')) {
+      return getRandomQuote();
+    } 
+      return splicedQuote;
+    }
+    if (!filter_1.checked && !filter_2.checked && !filter_3.checked) {
+      return splicedQuote;
+    }
 }
 
 // Function to build a string using the different properties of the quote object previously selected from the array and print it to the screen. 
@@ -93,14 +121,5 @@ function printQuote() {
 //Emoji change after first click
 function changeEmoji() {
   const root = document.querySelector(":root");
-  root.style.setProperty("--pseudo-emoji", `'👉🏽'`);
-}
-
-//Filter array by tags
-function filterTags(word) {
-  let search = word;
-  results = checkIn.filter(({tags}) => {
-  return tags.some(e => e.toLowerCase().includes(search.toLowerCase()))
-  })
-  console.log(results);
+  root.style.setProperty("--pseudo-emoji", "url('../img/brainman.gif')");
 }

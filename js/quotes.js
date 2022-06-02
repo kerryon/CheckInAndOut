@@ -29,59 +29,59 @@ var checkIn = [
 	},
 	{
 		quote: "Welchen Berufswunsch hattest du als Kind?",
-		tags: ['man kennt sich']
+		tags: ['Bekannte']
 	},
 	{
 		quote: "Was ist für dich der schönste Ort, an dem du jemals warst?",
-		tags: ['man kennt sich']
+		tags: ['Bekannte']
 	},
 	{
 		quote: "Auf welches Lebensmittel könntest du getrost verzichten?",
-		tags: ['man kennt sich']
+		tags: ['Bekannte']
 	},
 	{
 		quote: "Was sind die Top-3 News aus deinem Bereich/Team/Unternehmen?",
-		tags: ['man kennt sich']
+		tags: ['Bekannte']
 	},
 	{
 		quote: "Was könnte deine Aufmerksamkeit heute ablenken?",
-		tags: ['man kennt sich']
+		tags: ['Bekannte']
 	},
 	{
 		quote: "Unter welchem Hashtag läuft dein Tag / deine Woche?",
-		tags: ['man kennt sich']
+		tags: ['Bekannte']
 	},
 	{
 		quote: "Stadtmensch oder Landei?",
-		tags: ['man kennt sich']
+		tags: ['Bekannte']
 	},
 	{
 		quote: "Was ist für dich das Unwort des Jahres?",
-		tags: ['Fremde']
+		tags: ['Kompliziert']
 	},
 	{
 		quote: "Morgenmensch oder Nachteule? ",
-		tags: ['Fremde']
+		tags: ['Kompliziert']
 	},
 	{
 		quote: "Welches Buch hast du zuletzt gelesen / welchen Podcast zuletzt gehört?",
-		tags: ['Fremde']
+		tags: ['Kompliziert']
 	},
 	{
 		quote: "Wenn du ein bedingungsloses Grundeinkommen bekommen würdest, welchen Job würdest du dann machen?",
-		tags: ['Fremde']
+		tags: ['Kompliziert']
 	},
 	{
 		quote: "Welche Sprache würdest du gerne sprechen können?",
-		tags: ['Fremde']
+		tags: ['Kompliziert']
 	},
 	{
 		quote: "Was sind deine 3 Wünsche für den Workshop / das Meeting heute?",
-		tags: ['Fremde']
+		tags: ['Kompliziert']
 	},
 	{
 		quote: "Mit was können dir andere immer eine Freude machen?",
-		tags: ['Fremde']
+		tags: ['Kompliziert']
 	}
 ];
 

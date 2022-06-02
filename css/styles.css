@@ -1,5 +1,7 @@
 :root {
-  --pseudo-emoji: '🙄';
+  /* --pseudo-emoji: '🙄'; */
+  --pseudo-emoji-1: url('../img/Blitz.gif');
+  --pseudo-emoji-2: url('../img/KatzeimLoch.gif');
 }
 
 @font-face {
@@ -23,10 +25,15 @@ body {
   height: 100%;
   color: black;
   font-family: 'ITC-bold';
-  background: linear-gradient(45deg,#FCE847, #4EFFA7, #F796E1 , #27DBB1,#FF8810, #18DD7B);
-    background-size: 600% 100%;
-    animation: gradient 16s linear infinite;
-    animation-direction: alternate;
+  /* background: linear-gradient(45deg,#FCE847, #4EFFA7, #F796E1 , #27DBB1,#FF8810, #18DD7B); */
+  background: radial-gradient(#FCE847, #b8a834);
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 @keyframes gradient {
@@ -36,19 +43,20 @@ body {
 
 .container {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
 }
 
 #quote-box {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 10%;
   right: 10%;
   width: 80%;
   line-height: .5;
 }
 .quote {
-  font-size: 4.2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.2;
   position: relative;
@@ -61,15 +69,21 @@ body {
   position: absolute;
 }
 .quote:before {
-  content: var(--pseudo-emoji);
-  top: 0.2em;
-  left: -1.2em;
+  content: var(--pseudo-emoji-1);
+  transform: scale(.4);
+  top: -1em;
+  left: -2.2em;
+  width: 50px;
+  height: 50px;
+
 }
 /* .quote:after {
-  content: "”";
-  bottom: -.1em;
-  margin-left: .1em;
-  position: absolute;
+  content: var(--pseudo-emoji-2);
+  transform: scale(.4);
+  bottom: 0em;
+  right: 0em;
+  width: 50px;
+  height: 50px;
 } */
 .source {
   font-size: 1.25rem;;
@@ -112,14 +126,15 @@ body {
   padding: 15px 0;
   transition: .5s ; */
 
+  position: fixed;
   color: white;
   font-size: 1.2rem;
-  width: 150px;
-	height: 150px;
-	margin-left: -75px;
-	margin-top: -75px;
+  width: 120px;
+	height: 120px;
+	margin-left: -60px;
+	margin-top: -60px;
 	left: 50%;
-	bottom: 15%;
+	bottom: 12%;
 	position: absolute;
 	background: #e55050;
 	border-radius: 100px;
@@ -136,42 +151,40 @@ body {
 	 box-shadow: inset -2px 2px 2px 0px #ef9393, inset 2px -2px 2px 0px rgba(113,17,17,0.3), inset 0px 0px 40px 15px #de2424, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 2px 1px rgba(113,17,17,0.5), 0px 0px 4px 1px #711111;
 }
 
-/* #loadQuote:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0.5em 0.5em -0.4em black;
-  transform: translateY(-0.25em);
+.buttons {
+  flex-direction: row;
+  padding: 30px;
+  width: 100%;
+  align-items: space-between;
 }
-#loadQuote:focus {
-  outline: none;
-} */
 
 .btn__wrapper {
   display: flex;
   flex-direction: row;
   text-transform: uppercase;
-  width: 100%;
   justify-content: center;
-  margin-top: 50px;
   margin-bottom: 20px;
   overflow:auto;
-  float:left;
 }
 
 .btn__wrapper label { 
   float:left;
   width: 10em;
-  height: 3em;
+  height: 3.5em;
 }
 
 .btn__wrapper label:last-child { 
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .btn__wrapper label span { 
   text-align:center;
-  padding:12px 0px;
+  font-size: 0.8em;
+  padding:10px 10px;
   display:block;
   border-radius: 25px;
+  border: 2px solid black;
+  padding-top: 16px;
 }
 
 .btn__wrapper label input {
@@ -185,19 +198,6 @@ body {
   color:#fff;
 }
 
-.btn {
-  font-family:'ITC-book';
-  width: 10em;
-  height: 3em;
-  display: inline-block;
-  border-radius: 50px;
-  border: 3px solid #fff;
-  color: white;
-  background-color: black;
-  padding: 15px 0;
-  transition: .5s ;
-}
-
 .btn input {
   position: absolute;
   display: none;
@@ -209,14 +209,70 @@ body {
 
 .filter__wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   height: 50px;
-  width: 100%;
+  /* text-transform: uppercase; */
 }
 
-@media screen and (max-width: 1200px) {
+.filter__wrapper label { 
+  float:left;
+  height: 3em;
+  margin-left: 10px;
+}
+
+.filter__wrapper label:first-child { 
+  margin-left: initial;
+}
+
+.filter__wrapper label span { 
+  font-family: 'ITC-book';
+  font-size: 0.8em;
+  text-align:center;
+  padding:12px 0px;
+  display:block;
+  border-radius: 25px;
+  padding: 5px 10px;
+  border: 2px solid black;
+  padding-top: 10px;
+}
+
+.filter__wrapper label input {
+  position:absolute;
+  display: none;
+  top:-20px;
+}
+
+.filter__wrapper input:checked + span {
+  background-color:black;
+  color:#fff;
+}
+
+.filter span {
+  font-family: 'ITC-bold';
+}
+
+.gif__1 {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}
+
+.gif__2 {
+  position: absolute;
+  bottom: 10%;
+  left: 2%;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+}
+
+@media (min-width: 764px) {
   .quote {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .quote:before, .quote:after {
     font-size: 4rem;
@@ -225,28 +281,36 @@ body {
     font-size: 2rem;
   }
   #loadQuote {
-    font-size: 2rem;
-    width: 250px;
-    height: 250px;
-    margin-left: -125px;
-	 margin-top: -125px;
-   border-radius: 50%;
+    font-size: 1.2rem;
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+	  margin-top: -75px;
+    border-radius: 50%;
   }
   #loadQuote:active {
-    margin-left: -100px;
-    margin-top: -100px;
+    margin-left: -50px;
+    margin-top: -50px;
  }
   h4 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .btn__wrapper label span {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .btn__wrapper label { 
-    margin-top: 100px;
+    margin-top: 20px;
     float:left;
-    width: 15em;
+    width: 10em;
+    height: 4em;
+  }
+  .filter__wrapper label span {
+    font-size: 1rem;
+  }
+
+  .filter__wrapper label { 
+    float:left;
     height: 4em;
   }
 }
