@@ -102,7 +102,8 @@ if (checkInChecked.checked == false) {
 function printQuote() {
   changeEmoji();
   randomObjects = getRandomQuote();
-  message = '<p class="quote">' + randomObjects.quote + '</p>'; 
+
+  message = '<p id="quote" class="quote">' + randomObjects.quote + '</p>'; 
   if (randomObjects.source !== undefined) {
     message += '<p class="source">' + randomObjects.source;
   }
@@ -114,6 +115,18 @@ function printQuote() {
   print(message);
   randomColor();
   document.getElementById('rgb').style.background = randomHEX();
+
+  var stringLength = randomObjects.quote.length;
+  const getQuote = document.getElementById('quote');
+  if (screen.width > 764) {
+    getQuote.style.fontSize = "3.5rem";
+  } else {
+    if (stringLength > 100) {
+      getQuote.style.fontSize = "1.5rem";
+    } else {
+      getQuote.style.fontSize = "2.3rem";
+    }
+  }
 }
 //Set an interval of each 10 seconds to execute our printQuote function
 // setInterval(printQuote, 10000);

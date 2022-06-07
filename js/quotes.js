@@ -8,7 +8,7 @@ var checkIn = [
 		tags: ['Freunde']
 	},
 	{
-		quote: "Was hat dich zuletzt so inspiriert/begeistern, dass du anderen davon erzählt hast?",
+		quote: "Was hat dich zuletzt so inspiriert / begeistern, dass du anderen davon erzählt hast?",
 		tags: ['Freunde']
 	},
 	{
@@ -16,7 +16,7 @@ var checkIn = [
 		tags: ['Freunde']
 	},
 	{
-		quote: "Was ist dein meist gehörter Interpret auf Spotify/iTunes...? ",
+		quote: "Was ist dein meist gehörter Interpret auf Spotify / iTunes...? ",
 		tags: ['Freunde']
 	},
 	{
@@ -40,7 +40,7 @@ var checkIn = [
 		tags: ['Bekannte']
 	},
 	{
-		quote: "Was sind die Top-3 News aus deinem Bereich/Team/Unternehmen?",
+		quote: "Was sind die Top-3 News aus deinem Bereich / Team / Unternehmen?",
 		tags: ['Bekannte']
 	},
 	{
@@ -87,7 +87,7 @@ var checkIn = [
 
 var checkOut = [
 	{
-		quote: "Was war dein AHA-Moment in diesem Meeting/Workshop/heute?",
+		quote: "Was war dein AHA-Moment in diesem Meeting / Workshop / heute?",
 		tags: ['check-out']
 	},
 	{

@@ -36,6 +36,18 @@ body {
   box-sizing: border-box;
 }
 
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.close a {
+  text-decoration: none;
+}
+
 @keyframes gradient {
   0% {background-position: 0%}
   100% {background-position: 100%}
@@ -55,8 +67,9 @@ body {
   width: 80%;
   line-height: .5;
 }
+
 .quote {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 400;
   line-height: 1.2;
   position: relative;
@@ -272,7 +285,7 @@ body {
 
 @media (min-width: 764px) {
   .quote {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .quote:before, .quote:after {
     font-size: 4rem;
