@@ -76,19 +76,19 @@ if (checkInChecked.checked == false) {
 }
 
   if (filter_1.checked == true) {
-    if (!splicedQuote.tags.includes('Freunde')) {
+    if (!splicedQuote.tags.includes('persönlich')) {
       return getRandomQuote();
     } 
       return splicedQuote;
     }
   if (filter_2.checked == true) {
-    if (!splicedQuote.tags.includes('Bekannte')) {
+    if (!splicedQuote.tags.includes('kollegial')) {
       return getRandomQuote();
     } 
       return splicedQuote;
     }
   if (filter_3.checked == true) {
-    if (!splicedQuote.tags.includes('Kompliziert')) {
+    if (!splicedQuote.tags.includes('kennenlernen')) {
       return getRandomQuote();
     } 
       return splicedQuote;

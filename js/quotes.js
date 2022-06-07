@@ -1,87 +1,87 @@
 var checkIn = [
 	{
 		quote: "Wofür bist du diese Woche/heute dankbar?",
-		tags: ['Freunde']
+		tags: ['persönlich']
 	},
 	{
 		quote: "Wann hast du das letzte Mal etwas zum ersten Mal gemacht?",
-		tags: ['Freunde']
+		tags: ['persönlich']
 	},
 	{
 		quote: "Was hat dich zuletzt so inspiriert / begeistern, dass du anderen davon erzählt hast?",
-		tags: ['Freunde']
+		tags: ['persönlich']
 	},
 	{
 		quote: "Welchem aktuellen Trend sollten wir als Team/Unternehmen mehr folgen?",
-		tags: ['Freunde']
+		tags: ['persönlich']
 	},
 	{
 		quote: "Was ist dein meist gehörter Interpret auf Spotify / iTunes...? ",
-		tags: ['Freunde']
+		tags: ['persönlich']
 	},
 	{
 		quote: "Welches Lied drückt deine Stimmung heute aus?",
-		tags: ['Freunde']
+		tags: ['persönlich']
 	},
 	{
 		quote: "Wessen Job würdest du gerne mal machen?",
-		tags: ['Freunde']
+		tags: ['persönlich']
 	},
 	{
 		quote: "Welchen Berufswunsch hattest du als Kind?",
-		tags: ['Bekannte']
+		tags: ['kollegial']
 	},
 	{
 		quote: "Was ist für dich der schönste Ort, an dem du jemals warst?",
-		tags: ['Bekannte']
+		tags: ['kollegial']
 	},
 	{
 		quote: "Auf welches Lebensmittel könntest du getrost verzichten?",
-		tags: ['Bekannte']
+		tags: ['kollegial']
 	},
 	{
 		quote: "Was sind die Top-3 News aus deinem Bereich / Team / Unternehmen?",
-		tags: ['Bekannte']
+		tags: ['kollegial']
 	},
 	{
 		quote: "Was könnte deine Aufmerksamkeit heute ablenken?",
-		tags: ['Bekannte']
+		tags: ['kollegial']
 	},
 	{
 		quote: "Unter welchem Hashtag läuft dein Tag / deine Woche?",
-		tags: ['Bekannte']
+		tags: ['kollegial']
 	},
 	{
 		quote: "Stadtmensch oder Landei?",
-		tags: ['Bekannte']
+		tags: ['kollegial']
 	},
 	{
 		quote: "Was ist für dich das Unwort des Jahres?",
-		tags: ['Kompliziert']
+		tags: ['kennenlernen']
 	},
 	{
 		quote: "Morgenmensch oder Nachteule? ",
-		tags: ['Kompliziert']
+		tags: ['kennenlernen']
 	},
 	{
 		quote: "Welches Buch hast du zuletzt gelesen / welchen Podcast zuletzt gehört?",
-		tags: ['Kompliziert']
+		tags: ['kennenlernen']
 	},
 	{
 		quote: "Wenn du ein bedingungsloses Grundeinkommen bekommen würdest, welchen Job würdest du dann machen?",
-		tags: ['Kompliziert']
+		tags: ['kennenlernen']
 	},
 	{
 		quote: "Welche Sprache würdest du gerne sprechen können?",
-		tags: ['Kompliziert']
+		tags: ['kennenlernen']
 	},
 	{
 		quote: "Was sind deine 3 Wünsche für den Workshop / das Meeting heute?",
-		tags: ['Kompliziert']
+		tags: ['kennenlernen']
 	},
 	{
 		quote: "Mit was können dir andere immer eine Freude machen?",
-		tags: ['Kompliziert']
+		tags: ['kennenlernen']
 	}
 ];
 
