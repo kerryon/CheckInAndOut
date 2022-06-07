@@ -119,11 +119,11 @@ var checkOut = [
 		tags: ['check-out']
 	},
 	{
-		quote: "Wie schätzt du deinen eigenen Beitrag bei dem Meeting / Workshop heute ein? Was nimmst du dir vor beim nächsten Mal besser/anders zu machen?",
+		quote: "Wie schätzt du deinen eigenen Beitrag bei dem Meeting / Workshop heute ein? Was nimmst du dir vor beim nächsten Mal besser / anders zu machen?",
 		tags: ['check-out']
 	},
 	{
-		quote: "Wenn unser Meeting/Workshop /Projekt ein Film gewesen ist, welcher war es? Bzw. Mit welchem Filmgenre ist unser Meeting / Workshop / Projekt heute vergleichbar? (z.B. Drama, Thriller, Komödie, Liebesfilm, Kinderfilm, Tier-Dokumentation, Science Fiction...)",
+		quote: "Wenn unser Meeting / Workshop / Projekt ein Film gewesen ist, welcher war es? Bzw. Mit welchem Filmgenre ist unser Meeting / Workshop / Projekt heute vergleichbar? (z.B. Drama, Thriller, Komödie, Liebesfilm, Kinderfilm, Tier-Dokumentation, Science Fiction...)",
 		tags: ['check-out']
 	},
 	{

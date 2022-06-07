@@ -66,36 +66,37 @@ if (checkInChecked.checked == false) {
 		checkOut = quotes3;
 	}
 
-  if (filter_1.checked || filter_2.checked || filter_3.checked) {
-    filter_1.checked = false;
-    filter_2.checked = false;
-    filter_3.checked = false;
-  }
+  // if (filter_1.checked || filter_2.checked || filter_3.checked) {
+  //   filter_1.checked = false;
+  //   filter_2.checked = false;
+  //   filter_3.checked = false;
+  // }
 
-  return splicedQuote;
+  // return splicedQuote;
 }
+return splicedQuote;
 
-  if (filter_1.checked == true) {
-    if (!splicedQuote.tags.includes('persönlich')) {
-      return getRandomQuote();
-    } 
-      return splicedQuote;
-    }
-  if (filter_2.checked == true) {
-    if (!splicedQuote.tags.includes('kollegial')) {
-      return getRandomQuote();
-    } 
-      return splicedQuote;
-    }
-  if (filter_3.checked == true) {
-    if (!splicedQuote.tags.includes('kennenlernen')) {
-      return getRandomQuote();
-    } 
-      return splicedQuote;
-    }
-    if (!filter_1.checked && !filter_2.checked && !filter_3.checked) {
-      return splicedQuote;
-    }
+  // if (filter_1.checked == true) {
+  //   if (!splicedQuote.tags.includes('persönlich')) {
+  //     return getRandomQuote();
+  //   } 
+  //     return splicedQuote;
+  //   }
+  // if (filter_2.checked == true) {
+  //   if (!splicedQuote.tags.includes('kollegial')) {
+  //     return getRandomQuote();
+  //   } 
+  //     return splicedQuote;
+  //   }
+  // if (filter_3.checked == true) {
+  //   if (!splicedQuote.tags.includes('kennenlernen')) {
+  //     return getRandomQuote();
+  //   } 
+  //     return splicedQuote;
+  //   }
+  //   if (!filter_1.checked && !filter_2.checked && !filter_3.checked) {
+  //     return splicedQuote;
+  //   }
 }
 
 // Function to build a string using the different properties of the quote object previously selected from the array and print it to the screen. 
@@ -111,7 +112,7 @@ function printQuote() {
     message += '<span class="citation">' + randomObjects.citation + '</span>'; 
     message += '<span class="year">' + randomObjects.year + '</span>' + '</p>';
   }
-  message += '<h4>' + randomObjects.tags + '</h4>';
+  // message += '<h4>' + randomObjects.tags + '</h4>';
   print(message);
   randomColor();
   document.getElementById('rgb').style.background = randomHEX();

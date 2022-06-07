@@ -61,7 +61,7 @@ body {
 
 #quote-box {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 10%;
   right: 10%;
   width: 80%;
@@ -280,6 +280,16 @@ body {
   left: 2%;
   width: 120px;
   height: 120px;
+  z-index: -1;
+}
+
+.gif__3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-35px, 0);
+  width: 70px;
+  height: 70px;
   z-index: -1;
 }
 
