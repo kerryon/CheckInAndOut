@@ -125,7 +125,7 @@ function printQuote() {
     if (stringLength > 100) {
       getQuote.style.fontSize = "1.5rem";
     } else {
-      getQuote.style.fontSize = "2.3rem";
+      getQuote.style.fontSize = "2rem";
     }
   }
 }

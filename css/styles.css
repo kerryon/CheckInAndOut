@@ -69,7 +69,7 @@ body {
 }
 
 .quote {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   position: relative;
@@ -277,7 +277,7 @@ body {
 .gif__2 {
   position: absolute;
   bottom: 10%;
-  left: 2%;
+  left: 10%;
   width: 120px;
   height: 120px;
   z-index: -1;
@@ -335,6 +335,10 @@ body {
   .filter__wrapper label { 
     float:left;
     height: 4em;
+  }
+
+  .gif__2 {
+    left: 35%;
   }
 }
 
